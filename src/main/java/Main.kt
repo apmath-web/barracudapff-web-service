@@ -10,6 +10,7 @@ import java.time.LocalDateTime
 
 fun main(args: Array<String>) {
     val server = embeddedServer(Netty, port = 8080) {
+
         routing {
             get("/") {
                 call.respondText("Hello Kotlin!")
